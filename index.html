@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>SPA BANK-APP</title>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h3>Bank application</h3>
+        <button id="accBtn" class="btn btn-primary">Accounts</button>
+        <button id="addAccBtn" class="btn btn-info">Add Accounts</button>
+        <button id="editdeleteAccBtn" class="btn btn-danger">Edit/Delete Accounts</button>
+    </div>
+
+    <div class="container">
+        <div class="row" id="accountView">
+            <div class="col-10 offset-1">
+                <h3 class="display-4">Accounts</h3>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Deposit</th>
+                                    <th>cCard</th>
+                                </tr>
+                            </thead>
+                            <tbody id="main-body">
+                                <!-- <tr>
+                                       <td>1</td>
+                                       <td>Riste</td>
+                                       <td>1000</td>
+                                       <td>Master</td>
+                                   </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="addAccountView">
+            <div class="col-10 offset-1">
+                <h3 class="display-5">Add Account</h3>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <input id="idInput" type="text" placeholder="ID" class="form-control"></input><br>
+                        <input id="nameInput" type="text" placeholder="Name" class="form-control"></input><br>
+                        <input id="depositInput" type="text" placeholder="Deposit" class="form-control"></input><br>
+                        <input id="cCardInput" type="text" placeholder="cCard" class="form-control"></input><br>
+                        <button id="sendnewAcc" type="submit" class="btn btn-success form-control">Attach new account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row" id="editDeleteView">
+            <div class="col-10 offset-1">
+                <h3 class="display-4">Edit/Delete Account</h3>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Deposit</th>
+                                    <th>cCard</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="editMainBody">
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="editAccountView">
+            <div class="col-10 offset-1">
+                <h3 class="display-5">Edit Account</h3>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <input id="eidInput" type="text" placeholder="ID" class="form-control"></input><br>
+                        <input id="enameInput" type="text" placeholder="Name" class="form-control"></input><br>
+                        <input id="edepositInput" type="text" placeholder="Deposit" class="form-control"></input><br>
+                        <input id="ecCardInput" type="text" placeholder="cCard" class="form-control"></input><br>
+                        <button id="sendeditAcc" type="submit" class="btn btn-success form-control">Send edit account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
